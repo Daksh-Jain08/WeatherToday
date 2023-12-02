@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+
+<div class="flex space-between location">
+    <div class="flex-col justify-center align-center">
+        <div class="city"><%= location.name %></div>
+        <small class="country"><%= location.country %></small>
+    </div>
+    <div class="flex-col">
+        <div class="img-box"><img src="<%= current.weather_icons[0] %>" alt=""></div>
+    </div>
+
+</div>
+
+<div class="grid table">
+    <div class="cell flex align-center justify-center first">Temprature</div>
+    <div class="cell flex align-center justify-center second"><%= current.temperature %></div>
+    <div class="cell flex align-center justify-center first">Wind Speed</div>
+    <div class="cell flex align-center justify-center second"><%= current.wind_speed %></div>
+    <div class="cell flex align-center justify-center first">Wind Direction</div>
+    <div class="cell flex align-center justify-center second"><%= current.wind_dir %></div>
+    <div class="cell flex align-center justify-center first">Pressure</div>
+    <div class="cell flex align-center justify-center second"><%= current.pressure %></div>
+    <div class="cell flex align-center justify-center first">Humidity</div>
+    <div class="cell flex align-center justify-center second"><%= current.humidity %></div>
+    <div class="cell flex align-center justify-center first">Feels Like</div>
+    <div class="cell flex align-center justify-center second"><%= current.feelslike %></div>
+    <div class="cell flex align-center justify-center first">Precipitaiton chances</div>
+    <div class="cell flex align-center justify-center second"><%= current.precip %></div>
+</div>
+
+<%- include('partials/footer.ejs') %>
