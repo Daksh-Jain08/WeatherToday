@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+body{
+    /* color: white; */
+    background-image: url('../images.jpeg');
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+}
+
 header{
     background-color: rgb(18, 95, 202);
 }
